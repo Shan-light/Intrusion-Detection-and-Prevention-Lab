@@ -12,7 +12,7 @@ Simulate real-world intrusion scenarios to observe how Suricata detects and prev
 
 ### Skills Learned
 - Network Security Fundamentals - Understanding core concepts of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)
-- Passive and active network monitoring
+- Passive mode (detects threats and generates alerts- IDS) and active mode (blocks or prevents detected malicious traffic from entering the network - IPS).
 - Suricata Installation and Configuration - Installing Suricata on a Kali Linux environment
 - Configuring Suricata to operate in IDS and IPS modes
 - Managing Suricata rule sets and YAML configuration files
@@ -22,17 +22,21 @@ Simulate real-world intrusion scenarios to observe how Suricata detects and prev
 - Development of critical thinking and problem-solving skills in cybersecurity.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Suricata - a network sercurity tool used to monitor network traffic in real-time to detect and prevent malicious activity.Suricata can be integrated into Security Information and Event Management (SIEM) system for log ingestion and analysis.
+- Kali Linux Terminal
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+### 1. Update the Kali Linux Operating System (OS).
 
-Example below.
+- The system was updated before installing Suricata to ensure that the system is stable, secure, and compatible with the latest security patches.
+- using the commands" sudo apt update -y
+
+
+I encountered the “NO_PUBKEY ED65462EC8D5E4C5” error while trying to update the Kali Linux system, which is a GPG (Gnu Privacy Guard) key error. A GPG key error in Kali system means APT cannot find the key to verify Kali’s repository. The solution is to add the correct public key to APT’s key ring or file. The Offensive Security organization had lost access to their old repository signing key (ID ED444FF07D8D0BF6) so initiated and published a new key (ID ED65462EC8D5E4C5) for older Kali versions (Arun, 2025). 
+
+
+
 
 *Ref 1: Network Diagram*
