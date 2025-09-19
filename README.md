@@ -42,3 +42,7 @@ Simulate real-world intrusion scenarios to observe how Suricata detects and prev
 <img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/5efb002473dd8d3e230322077a4169812cb378f9/images/suricata-download-keyfile.png"/>
 *Task 1.2: Image 2*
 
+- The *sha1sum* command was used along with the file and hash to check the integrity of the file ensuring nothing was altered.
+- Then the *gpn --no-default-keyring -keyring* command was used with the file path and *-K* option to let the system know to bypass the default key file, use the one newly stored, and listing the public keys in the file.
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/a1bfcb429fb482469d90a8bcd4faf81402598f6d/images/FileHashIntegrity.png">
+*Task 1.3: Image 3*
