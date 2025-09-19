@@ -30,13 +30,15 @@ Simulate real-world intrusion scenarios to observe how Suricata detects and prev
 
 ### 1. Update the Kali Linux Operating System (OS).
 
-- The system was updated before installing Suricata to ensure that the system is stable, secure, and compatible with the latest security patches.
-- using the commands" sudo apt update -y
+- The system must be updated before installing Suricata to ensure that the system is stable, secure, and compatible with the latest security patches.
+- using the commands: *sudo apt update -y*
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/5efb002473dd8d3e230322077a4169812cb378f9/images/suricata%20update1.png"/>
+  *Task 1.1: Image 1*
 
+ - I encountered the “NO_PUBKEY ED65462EC8D5E4C5” error while trying to update the Kali Linux system, which is a GPG (Gnu Privacy Guard) key error. A GPG key error in Kali system means APT cannot find the key to verify Kali’s repository. The solution is to add the correct public key to APT’s key ring or file. The Offensive Security organization had lost access to their old repository signing key (ID ED444FF07D8D0BF6) so initiated and published a new key (ID ED65462EC8D5E4C5) for older Kali versions (Arun, 2025).
+ - To fix this issue, the updated key file package was downloaded and installed using the GPG method, placing the key file directly into the directory. The system was successfully updated as seen below.
 
-I encountered the “NO_PUBKEY ED65462EC8D5E4C5” error while trying to update the Kali Linux system, which is a GPG (Gnu Privacy Guard) key error. A GPG key error in Kali system means APT cannot find the key to verify Kali’s repository. The solution is to add the correct public key to APT’s key ring or file. The Offensive Security organization had lost access to their old repository signing key (ID ED444FF07D8D0BF6) so initiated and published a new key (ID ED65462EC8D5E4C5) for older Kali versions (Arun, 2025). 
+ - The commands: *sudo wget* with the url of the keyring file from the source, along with *-o* command indicating the file path to where the file should be downloaded and stored.  
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/5efb002473dd8d3e230322077a4169812cb378f9/images/suricata-download-keyfile.png"/>
+*Task 1.2: Image 2*
 
-
-
-
-*Ref 1: Network Diagram*
