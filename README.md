@@ -46,3 +46,15 @@ Simulate real-world intrusion scenarios to observe how Suricata detects and prev
 - Then the *gpn --no-default-keyring -keyring* command was used with the file path and *-K* option to let the system know to bypass the default key file, use the one newly stored, and listing the public keys in the file.
 <img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/a1bfcb429fb482469d90a8bcd4faf81402598f6d/images/FileHashIntegrity.png">
 *Task 1.3: Image 3*
+
+- The system was now updated.
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/70ff62cdae88128e1bf7712738436c78e673ad03/images/system%20updated1.2.png">
+*Task 1.4: Image 4*
+
+- Suricata was installed.
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/89a5fa7f36a9791f2fb9f9a5f0793294f9bc8ad9/images/suricata%20installed.png">
+*Task 1.5: Image 5*
+
+- Suricata was started and the status was actively running.
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/89a5fa7f36a9791f2fb9f9a5f0793294f9bc8ad9/images/suricataStaus.png">
+*Task 1.6: Image 6*
