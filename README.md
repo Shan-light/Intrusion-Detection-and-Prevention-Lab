@@ -75,9 +75,18 @@ Task 3.2: Image 8
 <img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/0a3794b299f77c94863f7baa238ea7929106cc32/images/etcSuricataRules%20file.png">
 Task 4.1: Image 9
 
-### 5. Add a test rule into the local.rules file.
-- Rule was added to the local.rules file with command: * nano /var/lib/suricata/rules/local.rules *, adding the rule *drop dns any any -> any any (msg:"DNS Facebook"; content:"facebook"; 
-classtype:policy-violation; sid:39398144; rev:1;) *
-- Suricata was updated based on the new rule using commands: *sudo suricata-update *.
+### 5. Add the test rule into the "local.rules" file.
+- Rule was added to the local.rules file with command: *nano /var/lib/suricata/rules/local.rules*, and the rule added *"drop dns any any -> any any (msg:"DNS Facebook"; content:"facebook"; 
+classtype:policy-violation; sid:39398144; rev:1;)"*
+- Suricata was updated based on the new rule using commands: *sudo suricata-update*.
 <img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/caea3d54a0542e30c9a14f3f2d0560b02a18dd18/images/facebook%20rule.png">
 Task 5.1: Image 10
+
+### 6. Suricata was tested with the new rule
+- Suricata was tested using command: *suricata -T -S /etc/suricata/rules/local.rules*, and the rule working.
+<img src="https://github.com/Shan-light/Intrusion-Detection-and-Prevention-Lab/blob/7a9d99ec285bab1fafcb42998a0bca95c58f0635/images/ruleTested%26updated.png">
+Task 6.1: Image 11
+
+### 7. Facebook website was tested.
+- Facebook.com was tested using the "curl" command to test the output from the website.
+- 
